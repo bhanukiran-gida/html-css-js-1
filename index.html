@@ -19,7 +19,11 @@
         </nav>
         <nav class="navbar">
             <div class="navbar_left">
-                <img src="assets/logo-desktop.svg" alt="" />
+                <!-- <img src="assets/logo-desktop.svg" alt="" /> -->
+                <source srcset="assets/logo-desktop.svg" media="(min-width: 1200px)">
+                <source srcset="assets/logo-mobile.svg" media="(min-width: 1024px)">
+                <img id="navbar_left_logo" src="assets/logo-desktop.svg" alt="Logo">
+            
             </div>
             <div class="navbar_right">
                 <ul class="navbar_right_list">

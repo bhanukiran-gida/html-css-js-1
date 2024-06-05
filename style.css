@@ -39,6 +39,12 @@ body {
     align-items: center;
 }
 
+#navbar_left_logo {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
 .navbar_right {
     display: flex;
     justify-content: flex-end;
@@ -214,7 +220,7 @@ body {
     background-color: red;
     border: none;
     border-radius: 10rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2.5rem;
     margin-top: 1rem;
     font-style: italic;
 }
@@ -453,17 +459,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    margin-top: 0.8rem;
+    padding: 1rem;
+    /* margin-top: 0.8rem; */
     background-color: rgb(255, 255, 255);
     height: auto;
     border-radius: 0.5rem;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main_body_faqs_plus_icon, .main_body_faqs_minus_icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .main_body_faqs_plus_icon {
@@ -700,4 +710,165 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #navbar_left_logo {
+        content: url('assets/logo-desktop.svg');
+    }
+
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    #navbar_left_logo {
+        content: url('assets/logo-mobile.svg');
+    }
+/* 
+    .main_body_info {
+        margin: 1.5rem 5vw;
+    } */
+
+
+}
+/* 
+@media (max-width: 992px) {
+    .main_body_recipe {
+        flex-direction: column;
+    }
+
+    .main_body_recipe_left, .main_body_recipe_right {
+        width: 100%;
+    }
+
+    .main_body_info {
+        display: block;
+    }
+
+    .main_body_brief, .main_body_assets, .main_body_related {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+} */
+
+@media (max-width: 768px) {
+    /* .navbar_right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_right_list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_right_list li {
+        margin: 0.5rem 0;
+    }
+
+    .main_head_content {
+        flex-direction: column;
+    }
+
+    .main_head_content > span {
+        margin-left: 0;
+    }
+
+    .main_body_recipe {
+        margin: 2rem 1rem;
+    }
+
+    .main_body_info {
+        margin: 1.5rem 1rem;
+    } */
+    .main_body_recipe {
+        flex-direction: column-reverse;
+        /* margin: 1rem; */
+    }
+
+    .main_body_recipe_left {
+        padding-right: 1.5rem;
+    }
+
+    .main_body_recipe_right {
+        border-radius: 0;
+    }
+
+    .main_body_recipe_left, .main_body_recipe_right {
+        width: 90vw;
+    }
+
+    .main_body_info {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        margin: 0;
+    }
+
+    .main_body_brief {
+        width: 91vw;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .main_body_assets {
+        width: 91vw;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+
+    .main_body_ideas {
+        width: 91vw;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+
+    .main_body_faqs > div {
+        width: 75vw;
+    }
+
+    .footer_top_right {
+        width: 25vw;
+        
+    }
+
+    .footer_middle {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .footer_bottom_subs_right {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100vw;
+    }
+
+    .footer_bottom_community, .footer_bottom_companies {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .main_body_recipe_left, .main_body_recipe_right {
+        padding: 0.5rem;
+    }
+
+    .main_body_recipe_left_button {
+        padding: 0.5rem;
+    }
+
+    .main_body_recipe_right_buttons {
+        font-size: 0.4rem;
+    }
 }
