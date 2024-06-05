@@ -1,3 +1,12 @@
+document.getElementById('burger_menu').addEventListener('click', function() {
+    document.querySelector('.navbar_right').classList.add('open');
+});
+
+document.getElementById('close_menu').addEventListener('click', function() {
+    document.querySelector('.navbar_right').classList.remove('open');
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const toggleButtons = document.querySelectorAll(".main_body_faqs_toggle_button");
 

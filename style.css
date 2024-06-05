@@ -56,6 +56,13 @@ body {
     font-weight: 500;
 }
 
+.burger_menu, .close_menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    /* z-index: 100; */
+}
+
 .navbar_right_list {
     list-style: none;
     display: flex;
@@ -784,6 +791,58 @@ body {
     .main_body_info {
         margin: 1.5rem 1rem;
     } */
+    .navbar_right {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background: white;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        display: block;
+    }
+
+    .navbar_right.open {
+        transform: translateX(0);
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .close_menu {
+        display: none;
+    }
+
+    .navbar_right_list {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .navbar_right_list li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #navbar_right_gitbutton {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar_right.open .burger_menu {
+        display: none;
+    }
+
+    .navbar_right.open .close_menu {
+        display: block;
+    }
+
     .main_body_recipe {
         flex-direction: column-reverse;
         /* margin: 1rem; */
