@@ -15,9 +15,15 @@
     <header>
 
         <nav class="advirtisement_nav">
-            <i class="fa-regular fa-suitcase"></i><span>
-                Looking to hire Developers? <a href="">Visit our Hiring Platform</span>
-            </p>            
+            <div class="advirtisement_nav_container">
+                <div class="advirtisement_nav_container_left">
+                    <i class="fa-regular fa-suitcase"></i>
+                    Looking to hire Developers?
+                </div>
+                <div class="advirtisement_nav_container_right">
+                    <a href="">Visit our Hiring Platform</a>
+                </div>
+            </div>
         </nav>
         <nav class="navbar">
             <div class="navbar_left">
@@ -30,11 +36,18 @@
             
             
             <div class="navbar_right">
-                <div class="burger_menu" id="burger_menu">
+                <!-- <div class="burger_menu" id="burger_menu">
                     <i class="fa fa-bars"></i>
                 </div>
                 <div class="close_menu" id="close_menu">
                     <i class="fa fa-times"></i>
+                </div> -->
+                <div class="burger_menu" id="burger_menu">
+                    <div class="bar-icon-wrapper">
+                        <span class="bar-icon"></span>
+                        <span class="bar-icon"></span>
+                        <span class="bar-icon"></span>
+                    </div>
                 </div>
                 <ul class="navbar_right_list">
                     <li class="navbar_right_list_icons"><a href="#"><i class="fa-solid fa-chart-line"></i> LEARNING PATHS</a></li>
