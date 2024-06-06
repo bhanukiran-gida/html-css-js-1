@@ -1,3 +1,9 @@
+// document.getElementById('burger_menu').addEventListener('click', function() {
+//     this.classList.toggle('active');
+//     document.querySelector('.navbar_right_list').classList.toggle('open');
+// });
+
+
 document.getElementById('burger_menu').addEventListener('click', function() {
     document.querySelector('.navbar_right').classList.add('open');
     document.querySelector('.navbar_right_list').classList.add('open');
