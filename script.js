@@ -1,10 +1,18 @@
 document.getElementById('burger_menu').addEventListener('click', function() {
     document.querySelector('.navbar_right').classList.add('open');
+    document.querySelector('.navbar_right_list').classList.add('open');
+    // document.querySelector('.fa-chart-line').classList.add('open');
+    // document.getElementById('.navbar_right_gitbutton').classList.add('open');
 });
 
 document.getElementById('close_menu').addEventListener('click', function() {
     document.querySelector('.navbar_right').classList.remove('open');
+    document.querySelector('.navbar_right_list').classList.remove('open');
+    // document.querySelector('.fa-chart-line').classList.remove('open');
+    // document.querySelector('.navbar_right_gitbutton').classList.remove('open');
 });
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
